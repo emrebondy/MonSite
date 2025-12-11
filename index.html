@@ -31,6 +31,74 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        /* HERO FULLSCREEN 
+        .hero-section {
+        height: 100vh;
+        min-height: 600px;
+        background-image: url('gif/cyberpunk3.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-top: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+        } */
+
+.hero-section {
+    height: 100vh;
+    background-image: url('gif/cyberpunk3.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* répartit les éléments verticalement */
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px; /* espace autour */
+}
+
+/* Titre en haut */
+.hero-title {
+    margin-top: 0;
+    color: #4cc9f0; /* couleur neon bleu */
+    text-shadow: 0 0 10px #4cc9f0, 0 0 20px #7209b7;
+    /* Nouveau : fond semi-transparent pour lisibilité */
+    background: rgba(0, 0, 0, 0.60); /* noir légèrement transparent */
+    padding: 10px 20px; /* espace autour du texte */
+    border-radius: 8px; /* coins arrondis pour style moderne */
+}
+
+/* Phrase au centre */
+.hero-subtitle {
+    color: #ff00ff; /* violet neon */
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: auto 0; /* centre verticalement */
+    text-shadow: 0 0 6px #ff4df0, 0 0 12px #ff00ff; /* ajout glow pour plus de lisibilité */
+
+   /* Fond plus foncé pour lisibilité */
+    background: rgba(0, 0, 0, 0.80); /* noir plus opaque */
+    padding: 15px 25px; /* espace autour du texte */
+    border-radius: 10px; /* coins arrondis pour style moderne */
+
+}
+
+
+/* Bouton en bas */
+.hero-button {
+    margin-bottom: 20px;
+}
+
+
+
         .project-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -79,15 +147,29 @@
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="container text-center" style="padding-top:120px; padding-bottom:60px;">
-    <h1 class="neon-title display-4 fw-bold">Développeur Fullstack & Informaticien Polyvalent</h1>
-    <p class="mt-3 text-secondary w-75 mx-auto">
-        Passionné par le développement (Java, JS, PHP), les systèmes Windows/Linux, Active Directory, la dockerisation et
-        la création de projets fullstack. Je recherche une mission freelance ou un poste en entreprise.
+
+<!-- HERO FULLSCREEN WITH IMAGE BACKGROUND 
+<section class="hero-section">
+<h1 class="neon-title display-4 fw-bold">Bienvenue sur le portfolio d’Emre Guclu</h1>
+<p class="mt-3 text-secondary w-75 mx-auto">
+Je suis développeur fullstack et informaticien polyvalent, passionné par le code, les systèmes, 
+et motivé par l’envie de transformer vos idées en projets réels et fonctionnels.
+</p>
+<a href="#projects" class="btn btn-neon px-4 py-2 mt-4">Voir mes projets</a>
+</section> -->
+
+<section class="hero-section">
+    <h1 class="neon-title display-4 fw-bold hero-title">Bienvenue sur le portfolio d’Emre Guclu</h1>
+
+    <p class="hero-subtitle">
+        Je suis développeur fullstack et informaticien polyvalent, passionné par le code
+        et motivé par l’envie de transformer vos idées en projets réels et fonctionnels.
     </p>
-    <a href="#projects" class="btn btn-neon px-4 py-2 mt-4">Voir mes projets</a>
+
+    <a href="#projects" class="btn btn-neon px-4 py-2 hero-button">Voir mes projets</a>
 </section>
+
+
 
 <!-- ABOUT -->
 <section id="about" class="container py-5">
