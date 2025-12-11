@@ -31,24 +31,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* HERO FULLSCREEN 
-        .hero-section {
-        height: 100vh;
-        min-height: 600px;
-        background-image: url('gif/cyberpunk3.gif');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        padding-top: 160px;
-        padding-left: 20px;
-        padding-right: 20px;
-        } */
-
+/* HERO */
 .hero-section {
     height: 100vh;
     background-image: url('gif/cyberpunk3.gif');
@@ -96,6 +79,43 @@
 .hero-button {
     margin-bottom: 20px;
 }
+
+/* ABOUT ME */
+
+/* Section About fullscreen */
+.about-section {
+    min-height: 100vh; /* prend tout l'écran */
+    background: #1b1b24; /* couleur de fond sombre */
+    color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+}
+
+/* Photo verticale */
+.about-photo img {
+    max-width: 500px; /* photo plus grande */
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #4cc9f0;
+}
+
+/* Texte */
+.about-text {
+    max-width: 700px;
+    font-size: 1.4rem; /* taille de base pour tous les paragraphes */
+    
+}
+
+/* Phrase qui tape l'oeil mais plus petite */
+.highlight-text {
+    font-size: 1.4rem; /* plus petit */
+    font-weight: 600;
+    color: #4cc9f0; /* bleu néon pour contraste sur le fond sombre */
+    text-shadow: 0 0 8px #4cc9f0, 0 0 15px #7209b7; /* glow */
+}
+
+
+/* RESTE */
 
 
 
@@ -147,40 +167,35 @@
     </div>
 </nav>
 
-
-<!-- HERO FULLSCREEN WITH IMAGE BACKGROUND 
-<section class="hero-section">
-<h1 class="neon-title display-4 fw-bold">Bienvenue sur le portfolio d’Emre Guclu</h1>
-<p class="mt-3 text-secondary w-75 mx-auto">
-Je suis développeur fullstack et informaticien polyvalent, passionné par le code, les systèmes, 
-et motivé par l’envie de transformer vos idées en projets réels et fonctionnels.
-</p>
-<a href="#projects" class="btn btn-neon px-4 py-2 mt-4">Voir mes projets</a>
-</section> -->
-
 <section class="hero-section">
     <h1 class="neon-title display-4 fw-bold hero-title">Bienvenue sur le portfolio d’Emre Guclu</h1>
 
-    <p class="hero-subtitle">
-        Je suis développeur fullstack et informaticien polyvalent, passionné par le code
-        et motivé par l’envie de transformer vos idées en projets réels et fonctionnels.
-    </p>
+    
 
     <a href="#projects" class="btn btn-neon px-4 py-2 hero-button">Voir mes projets</a>
 </section>
 
-
-
-<!-- ABOUT -->
-<section id="about" class="container py-5">
-    <h2 class="section-title">À propos</h2>
-    <div class="glass">
-        <p>
-            Je suis développeur fullstack et technicien informatique. J'ai réalisé des projets variés : dockerisation,
-            jeux Java, projets fullstack en alternance, projets d'école, applications PHP et travaux UX/UI.
-            Je maîtrise Windows Server, Linux, Active Directory, les bases de données et la virtualisation.
-        </p>
+<!-- ABOUT FULLSCREEN -->
+<section id="about" class="about-section d-flex align-items-center justify-content-center">
+  <div class="container text-center d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+    
+    <!-- Photo verticale -->
+    <div class="about-photo">
+      <img src="images/emre.jpg" class="img-fluid rounded" alt="Emre Guclu">
     </div>
+
+    <!-- Texte -->
+    <div class="about-text text-start">
+      <p>
+        Bonjour ! Je suis <strong>Emre Guclu</strong>, développeur fullstack et informaticien polyvalent, passionné par le code et le hardware.  
+        Sur ce portfolio, vous découvrirez mes compétences, mon parcours professionnel et mes projets réalisés.  
+        Vous pourrez jouer à mon <strong>jeu développé en Java</strong>, tester mes <strong>applications fullstack interactives</strong> directement sur le site, explorer mes <strong>projets universitaires</strong>, ainsi que consulter mes <strong>premières missions freelance</strong>.
+      </p>
+      <p class="highlight-text">
+        Mon objectif est de transformer vos idées en projets réels, fonctionnels et innovants.
+      </p>
+    </div>
+  </div>
 </section>
 
 
