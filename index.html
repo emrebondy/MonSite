@@ -156,6 +156,66 @@
             padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
+        /* SKILLS SLIDER */
+.skills-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scroll-left 25s linear infinite;
+}
+
+.skills-wrapper.reverse .skills-track {
+    animation: scroll-right 30s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* TECH SKILL */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    color: #e5e5e5;
+    font-size: 0.9rem;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 0 8px #4cc9f0);
+}
+
+/* SOFT SKILL */
+.soft-skill {
+    min-width: 180px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(76, 201, 240, 0.3);
+    color: #4cc9f0;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+}
+
     </style>
 </head>
 <body>
@@ -210,6 +270,13 @@
       <p class="highlight-text">
         Mon objectif est de transformer vos idées en projets réels, fonctionnels et innovants.
       </p>
+
+    <p class="mt-3">
+        <a href="cv/CV_EMRE_GUCU.pdf" download class="btn btn-neon px-4 py-2">
+            Télécharger mon CV
+        </a>
+    </p>
+
     </div>
   </div>
 </section>
@@ -281,25 +348,127 @@
 </section>
 
 
+<!-- SKILLS -->
+<section id="skills" class="container py-5">
+  <h2 class="section-title text-center mb-4">Compétences</h2>
+
+  <!-- TECH SKILLS -->
+  <div class="skills-wrapper mb-5">
+    <div class="skills-track">
+      <div class="skill"><img src="logos/java.png" alt="Java"><span>Java</span></div>
+      <div class="skill"><img src="logos/angular.png" alt="Angular"><span>Angular</span></div>
+      <div class="skill"><img src="logos/FLASK.png" alt="Flask"><span>Flask</span></div>
+      <div class="skill"><img src="logos/docker.png" alt="Docker"><span>Docker</span></div>
+      <div class="skill"><img src="logos/postgresql.jpg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+      <div class="skill"><img src="logos/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="skill"><img src="logos/python.png" alt="Python"><span>Python</span></div>
+      <div class="skill"><img src="logos/GitHub.jpg" alt="GitHub"><span>GitHub</span></div>
+      <div class="skill"><img src="logos/php.png" alt="PHP"><span>PHP</span></div>
+
+
+      <!-- DUPLICATION pour boucle infinie -->
+      <div class="skill"><img src="logos/java.png" alt="Java"><span>Java</span></div>
+      <div class="skill"><img src="logos/angular.png" alt="Angular"><span>Angular</span></div>
+      <div class="skill"><img src="logos/FLASK.png" alt="Flask"><span>Flask</span></div>
+      <div class="skill"><img src="logos/docker.png" alt="Docker"><span>Docker</span></div>
+      <div class="skill"><img src="logos/postgresql.jpg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+      <div class="skill"><img src="logos/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="skill"><img src="logos/python.png" alt="Python"><span>Python</span></div>
+      <div class="skill"><img src="logos/GitHub.jpg" alt="GitHub"><span>GitHub</span></div>
+      <div class="skill"><img src="logos/php.png" alt="PHP"><span>PHP</span></div>
+
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <h2 class="section-title text-center mb-4">Soft Skills</h2>
+
+  <div class="skills-wrapper reverse">
+    <div class="skills-track">
+      <div class="soft-skill">Autonomie</div>
+      <div class="soft-skill">Communication</div>
+      <div class="soft-skill">Organisation</div>
+      <div class="soft-skill">Sens du service</div>
+      <div class="soft-skill">Travail en équipe</div>
+      <div class="soft-skill">Ponctuel</div>
+      <div class="soft-skill">Pédagogue</div>
+
+
+      <!-- DUPLICATION -->
+      <div class="soft-skill">Autonomie</div>
+      <div class="soft-skill">Communication</div>
+      <div class="soft-skill">Organisation</div>
+      <div class="soft-skill">Sens du service</div>
+      <div class="soft-skill">Travail en équipe</div>
+      <div class="soft-skill">Ponctuel</div>
+      <div class="soft-skill">Pédagogue</div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- CONTACT -->
 <section id="contact" class="container py-5">
-    <h2 class="section-title">Contact</h2>
-    <form class="glass">
+  <h2 class="section-title text-center mb-5">Contact</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form 
+        action="https://formspree.io/f/mkowapnz" 
+        method="POST" 
+        class="glass p-4"
+      >
+        <p class="text-center mb-4" style="color:#4cc9f0; font-weight:600; text-shadow: 0 0 8px #4cc9f0, 0 0 15px #7209b7;">
+          Envoie-moi un message directement depuis le site !
+        </p>
+
         <div class="mb-3">
-            <label class="form-label">Nom</label>
-            <input type="text" class="form-control" placeholder="Ton nom">
+          <label class="form-label">Nom</label>
+          <input 
+            type="text" 
+            name="name" 
+            class="form-control glass-input" 
+            placeholder="Votre nom" 
+            required
+          >
         </div>
+
         <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Ton email">
+          <label class="form-label">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            class="form-control glass-input" 
+            placeholder="Votre email" 
+            required
+          >
         </div>
+
         <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="5" placeholder="Ton message"></textarea>
+          <label class="form-label">Message</label>
+          <textarea 
+            name="message" 
+            class="form-control glass-input" 
+            rows="6" 
+            placeholder="Votre message" 
+            required
+          ></textarea>
         </div>
-        <button class="btn btn-neon px-4 py-2">Envoyer</button>
-    </form>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-neon px-5 py-2">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </section>
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

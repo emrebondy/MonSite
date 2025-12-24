@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet – River Rush (Tower Defense Java)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1b1b24, #15151d);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+      color: #ffffff;
+    }
+
+    header p {
+      color: #b5b5c5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 480px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section .text {
+      flex: 1;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+
+    .section p,
+    .section li {
+      color: #cfcfe0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .badge {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      background-color: #2a2a3a;
+      color: #ffffff;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #6c63ff, #4f46e5);
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    .back-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section img {
+        max-width: 100%;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>River Rush</h1>
+    <p>Jeu Tower Defense · Java · JavaFX</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <img src="images/river-rush-gameplay.png" alt="Gameplay River Rush">
+
+      <div class="text">
+        <h2>Présentation du projet</h2>
+        <p>
+          <strong>River Rush</strong> est un jeu de type Tower Defense développé en Java avec JavaFX.
+          Le projet couvre l’ensemble des étapes de développement, de la conception à la réalisation
+          d’un jeu fonctionnel doté d’une interface graphique interactive.
+        </p>
+        <p>
+          L’objectif est de défendre une zone contre des vagues d’ennemis en plaçant
+          stratégiquement des unités de défense le long d’un parcours.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section reverse">
+      <img src="images/river-rush-architecture.png" alt="Architecture du projet">
+
+      <div class="text">
+        <h2>Architecture & logique du jeu</h2>
+        <p>
+          Le jeu repose sur une <strong>architecture orientée objet</strong> claire et modulaire.
+          Chaque élément (ennemis, unités, cartes) est représenté par des classes distinctes,
+          garantissant un code lisible, maintenable et évolutif.
+        </p>
+        <ul>
+          <li>Déplacement des ennemis le long d’un chemin</li>
+          <li>Calcul des dégâts et des points de vie en temps réel</li>
+          <li>Interactions entre unités de défense et ennemis</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <img src="images/river-rush-waves.png" alt="Système de vagues">
+
+      <div class="text">
+        <h2>Système de vagues & difficulté</h2>
+        <p>
+          Un système de vagues progressives a été conçu afin d’augmenter la difficulté
+          au fil de la partie. Chaque vague fait varier le nombre, le type et le comportement
+          des ennemis générés.
+        </p>
+        <p>
+          Cette mécanique permet de proposer une expérience de jeu dynamique et engageante.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section reverse">
+      <img src="images/river-rush-ui.png" alt="Interface utilisateur">
+
+      <div class="text">
+        <h2>Interface utilisateur & interactions</h2>
+        <p>
+          L’interface graphique a été développée avec <strong>JavaFX</strong>.
+          Elle permet au joueur de placer des unités, lancer une partie et suivre
+          l’état du jeu (vagues, ressources, points de vie).
+        </p>
+        <p>
+          Les interactions sont gérées via le système événementiel de JavaFX,
+          garantissant une expérience fluide et réactive.
+        </p>
+
+        <div class="tech-badges">
+          <span class="badge">Java</span>
+          <span class="badge">JavaFX</span>
+          <span class="badge">POO</span>
+          <span class="badge">Logique algorithmique</span>
+        </div>
+
+        <a href="#" class="project-link">
+          Voir le code du projet →
+        </a>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+  </main>
+
+</body>
+</html>
