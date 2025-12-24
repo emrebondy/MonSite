@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet – Docker Fullstack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1b1b24, #15151d);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: #b5b5c5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section .text {
+      flex: 1;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    .section p,
+    .section li {
+      color: #cfcfe0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    .project-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    .back-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section img {
+        max-width: 100%;
+      }
+    }
+
+    .project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 24px;
+  padding: 12px 22px;
+
+  background: linear-gradient(135deg, #ffffff, #e6e6f0);
+  color: #1b1b24;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.project-button::after {
+  content: "↗";
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.project-button:hover::after {
+  transform: translateX(4px);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Projet Docker – Architecture Fullstack</h1>
+    <p>Docker · Docker Compose · Angular · Flask · PostgreSQL</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="text">
+        <h2>Présentation du projet</h2>
+        <p>
+          Dans le cadre de ce projet, j’ai conçu et déployé une
+          <strong>architecture fullstack entièrement conteneurisée</strong>
+          à l’aide de <strong>Docker</strong>.
+        </p>
+        <p>
+          L’objectif était de proposer une solution simple à déployer, scalable
+          et intégrant une base de données sécurisée, prête à être utilisée sur
+          n’importe quelle machine hôte.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section reverse">
+      <img src="images/docker-compose.png" alt="Architecture Docker">
+
+      <div class="text">
+        <h2>Architecture & orchestration</h2>
+        <ul>
+          <li>Architecture multi-services : frontend, backend et base de données</li>
+          <li>Services isolés et indépendants</li>
+          <li>Orchestration complète via Docker Compose</li>
+          <li>Déploiement automatisé de l’environnement</li>
+          <li>Scalabilité facilitée des services</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <img src="images/docker-secrets.png" alt="Docker secrets">
+
+      <div class="text">
+        <h2>Sécurité & persistance des données</h2>
+        <p>
+          La base de données <strong>PostgreSQL</strong> bénéficie d’une
+          sécurisation renforcée grâce à l’utilisation de
+          <strong>Docker Secrets</strong>.
+        </p>
+        <p>
+          Le mot de passe de connexion est stocké dans un fichier séparé du code source,
+          évitant toute exposition dans les variables d’environnement ou dans le dépôt Git.
+          La persistance des données est assurée via des <strong>volumes Docker</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section reverse">
+        <a
+            href="documents/docker-explication.pdf"
+            class="project-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Consulter la documentation
+        </a>
+
+      <div class="text">
+        <h2>Documentation & bonnes pratiques</h2>
+        <p>
+          Un guide pratique accompagne le projet et détaille l’ensemble des étapes :
+          prérequis, construction des images Docker, configuration des secrets,
+          montage des volumes, lancement avec Docker Compose et commandes de scalabilité.
+        </p>
+        <p>
+          Ce document inclut également des conseils de débogage et des bonnes pratiques
+          pour sécuriser et déployer l’application en production.
+        </p>
+
+        
+      </div>
+    </div>
+
+
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+  </main>
+
+</body>
+</html>

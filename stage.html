@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet – Stage Développement Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1b1b24, #15151d);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: #b5b5c5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section .text {
+      flex: 1;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    .section p,
+    .section li {
+      color: #cfcfe0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    .project-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    .back-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section img {
+        max-width: 100%;
+      }
+    }
+
+
+
+
+
+
+
+       .project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 24px;
+  padding: 12px 22px;
+
+  background: linear-gradient(135deg, #ffffff, #e6e6f0);
+  color: #1b1b24;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.project-button::after {
+  content: "↗";
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.project-button:hover::after {
+  transform: translateX(4px);
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Stage – Développement Web</h1>
+    <p>WorkingFit · Sites vitrines · Figma & Webflow</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      
+
+      <div class="text">
+        <h2>Présentation du projet</h2>
+        <p>
+          Lors de mon stage en développement web au sein de la société <strong>WorkingFit</strong>,
+          j’ai été chargé de gérer l’ensemble des demandes informatiques des clients, principalement
+          orientées vers la création de sites vitrines.
+        </p>
+        <p>
+          Ce projet s’inscrivait dans un contexte proche d’un cadre freelance, où chaque mission
+          devait répondre précisément aux besoins et objectifs des clients.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section reverse">
+      <img src="images/stage-role.jpg" alt="Rôle et missions">
+
+      <div class="text">
+        <h2>Mon rôle</h2>
+        <ul>
+          <li>Participation aux réunions clients et recueil des besoins</li>
+          <li>Analyse des objectifs, contraintes et attentes</li>
+          <li>Conception de maquettes et schémas UX/UI sur Figma</li>
+          <li>Développement et intégration des sites vitrines</li>
+          <li>Respect du cahier des charges et livraison finale</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <img src="images/Projet-Stage-bureau.png" alt="Processus de travail">
+
+      <div class="text">
+        <h2>Processus de travail</h2>
+        <p>
+          Mon workflow débutait par des échanges réguliers avec les clients afin de bien comprendre
+          leurs attentes. Je concevais ensuite des maquettes sur Figma pour valider le design et
+          l’expérience utilisateur avant toute phase de développement.
+        </p>
+        <p>
+          Une fois les maquettes validées, je passais à l’intégration du site sur Webflow,
+          en veillant à respecter les exigences fonctionnelles et esthétiques définies.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section reverse">
+      <img src="images/Projet-Stage-figma.png" alt="Résultat final">
+
+      <div class="text">
+        <h2>Résultat final</h2>
+        <p>
+          Les projets livrés répondaient aux attentes des clients, tant sur le plan visuel que
+          fonctionnel. Cette expérience m’a permis de renforcer mon autonomie, ma communication
+          client et ma compréhension globale de la gestion de projets web.
+        </p>
+
+        <a
+            href="documents/docker-explication.pdf"
+            class="project-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            → Voir le projet en ligne
+        </a>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+  </main>
+
+</body>
+</html>

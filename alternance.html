@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternance – Développement Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1b1b24, #15151d);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: #b5b5c5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section .text {
+      flex: 1;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    .section p,
+    .section li {
+      color: #cfcfe0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    .back-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Alternance – Développement Web</h1>
+    <p>Centre Inffo · Angular · Flask · PostgreSQL</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="text">
+        <h2>Présentation du projet</h2>
+        <p>
+          Lors de mon alternance chez <strong>Centre Inffo</strong>, j’ai été chargé de la
+          <strong>refonte complète d’un ancien site interne administratif</strong>, utilisé
+          par le pôle administratif ainsi que par l’équipe en charge des lois et documents.
+        </p>
+        <p>
+          L’application permettait de créer, modifier et publier des documents et lois,
+          ensuite relayés vers un site public affichant les informations rendues publiques.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section reverse">
+      <img src="images/centre-inffo.png" alt="Back-office Centre Inffo">
+
+      <div class="text">
+        <h2>Mon rôle</h2>
+        <ul>
+          <li>Analyse des besoins des utilisateurs internes</li>
+          <li>Conception de la nouvelle interface administrative</li>
+          <li>Développement du frontend avec Angular</li>
+          <li>Développement du backend avec Flask</li>
+          <li>Gestion et structuration des données avec PostgreSQL</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <img src="images/centre-inffo-technologie2.png" alt="Architecture application">
+
+      <div class="text">
+        <h2>Architecture & technologies</h2>
+        <p>
+          La refonte a été réalisée selon une architecture <strong>full stack</strong>,
+          avec une séparation claire entre le frontend et le backend.
+        </p>
+        <p>
+          Cette organisation a permis d’assurer la maintenabilité de l’application,
+          la sécurité des données et une meilleure évolutivité du système.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section reverse">
+      <img src="images/centre-inffo-technologie.png" alt="Interface utilisateur">
+
+      <div class="text">
+        <h2>Compétences développées</h2>
+        <p>
+          Cette alternance m’a permis de renforcer mes compétences en
+          <strong>développement full stack</strong>,
+          en <strong>gestion de bases de données</strong>
+          et en <strong>conception d’interfaces adaptées à des utilisateurs métiers</strong>.
+        </p>
+        <p>
+          J’ai également acquis de l’expérience en mise en production
+          d’applications web internes et publiques.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION VIDÉO -->
+    <div class="section">
+      <div class="text">
+        <h2>Démonstration de l’application</h2>
+        <p>
+          Aperçu du fonctionnement de l’application administrative développée
+          lors de mon alternance.
+        </p>
+
+        <video controls width="100%" style="max-width: 1100px; border-radius: 12px;">
+          <source src="videos/vidéo-portfolio2.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+  </main>
+
+</body>
+</html>

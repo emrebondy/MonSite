@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projet – Stage Développement Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Card */
+    .card {
+      background-color: #15151d;
+      color: #eaeaf0;
+    }
+
+    .card-title {
+      color: #ffffff;
+    }
+
+    .text-muted {
+      color: #b5b5c5 !important;
+    }
+
+    p, li {
+      color: #cfcfe0;
+    }
+
+    h5 {
+      color: #ffffff;
+    }
+
+    /* Badges personnalisés */
+    .badge {
+      font-weight: 500;
+    }
+
+    .badge.bg-primary {
+      background-color: #3f3fff;
+    }
+
+    .badge.bg-success {
+      background-color: #3fa37f;
+    }
+
+    .badge.bg-dark {
+      background-color: #2a2a38;
+    }
+
+    .badge.bg-secondary {
+      background-color: #6c6c8a;
+    }
+
+    /* Images */
+    img {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Boutons */
+    .btn-primary {
+      background-color: #ffffff;
+      color: #15151d;
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #dcdce5;
+      color: #15151d;
+    }
+
+    .btn-outline-dark {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .btn-outline-dark:hover {
+      background-color: #ffffff;
+      color: #15151d;
+    }
+
+    .project-img {
+  width: 100%;
+  height: 400px;           /* même hauteur pour les deux */
+  object-fit: cover;       /* remplit le cadre sans déformer */
+  object-position: center; /* centre l’image */
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="container py-5">
+
+  <!-- Card projet -->
+  <div class="card shadow-lg border-0 rounded-4">
+
+    <div class="card-body p-4 p-md-5">
+
+      <!-- Titre -->
+      <h2 class="card-title mb-2">Stage – Développement Web</h2>
+      <p class="text-muted mb-4">WorkingFit · Sites vitrines · Figma & Webflow</p>
+
+      <!-- Description -->
+      <p>
+        Lors de mon stage en développement web au sein de la société <strong>WorkingFit</strong>,
+        j’ai été chargé de gérer les demandes informatiques des clients, principalement autour
+        de la création de sites vitrines.
+      </p>
+
+      <p>
+        J’intervenais dans un contexte proche du freelance, nécessitant autonomie,
+        organisation et communication directe avec les clients.
+      </p>
+
+      <!-- Missions -->
+      <h5 class="mt-4">Missions principales</h5>
+      <ul>
+        <li>Participation aux réunions clients et recueil des besoins</li>
+        <li>Analyse des objectifs et contraintes</li>
+        <li>Conception de maquettes UX/UI sur Figma</li>
+        <li>Développement et intégration des sites sur Webflow</li>
+        <li>Respect du cahier des charges et livraison finale</li>
+      </ul>
+
+      <!-- Outils -->
+      <h5 class="mt-4">Outils & technologies</h5>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-primary">Figma</span>
+        <span class="badge bg-success">Webflow</span>
+        <span class="badge bg-dark">HTML / CSS</span>
+        <span class="badge bg-secondary">UX / UI</span>
+      </div>
+
+      <!-- Valeur ajoutée -->
+      <p class="mt-4">
+        Cette expérience m’a permis de renforcer mon autonomie, ma communication avec les clients
+        ainsi que ma compréhension globale de la gestion de projets web dans un cadre professionnel.
+      </p>
+
+      <!-- Galerie -->
+      <h5 class="mt-5 mb-3">Aperçus du projet</h5>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <img src="images/Projet-Stage-bureau.png" class="project-img rounded-3" alt="Aperçu 1">
+        </div>
+        <div class="col-md-6">
+          <img src="images/Projet-Stage-figma.png" class="project-img rounded-3" alt="Aperçu 2">
+        </div>
+      </div>
+
+      <!-- Boutons -->
+      <div class="mt-5 d-flex flex-wrap gap-3">
+        <a href="index.html" class="btn btn-outline-dark">
+          ← Retour au site
+        </a>
+
+        <a
+          href="https://preview.webflow.com/preview/emres-stupendous-site-3c3ba5?utm_medium=preview_link&utm_source=designer&utm_content=emres-stupendous-site-3c3ba5&preview=b712194617369ef3a54224956212b05b&pageId=663348214b6b4d3e5262edae&workflow=preview"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Voir le projet en ligne
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

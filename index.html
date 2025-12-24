@@ -99,10 +99,20 @@
     border: 2px solid #4cc9f0;
 }
 
+/* Texte titre */
+.about-text .section-title {
+    font-size: 4rem;         /* taille du titre */
+    text-shadow: 0 0 6px #4cc9f0, 0 0 12px #7209b7;
+    margin-bottom: 20px;
+    position: relative;
+    top: -60px;  /* remonte le titre de 30px */
+}
+
 /* Texte */
 .about-text {
     max-width: 700px;
     font-size: 1.4rem; /* taille de base pour tous les paragraphes */
+    margin-top: 30px;
     
 }
 
@@ -151,6 +161,7 @@
 <body>
 
 <!-- NAVBAR -->
+
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand text-light fw-bold" href="#">EMRE</a>
@@ -159,23 +170,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link text-light" href="#projects">Projets</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#projects">Projets</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+
+<!-- HERO -->
+
 <section class="hero-section">
     <h1 class="neon-title display-4 fw-bold hero-title">Bienvenue sur le portfolio d’Emre Guclu</h1>
-
-    
-
     <a href="#projects" class="btn btn-neon px-4 py-2 hero-button">Voir mes projets</a>
 </section>
 
-<!-- ABOUT FULLSCREEN -->
+<!-- ABOUT ME -->
+
 <section id="about" class="about-section d-flex align-items-center justify-content-center">
   <div class="container text-center d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
     
@@ -186,6 +198,10 @@
 
     <!-- Texte -->
     <div class="about-text text-start">
+
+        <!-- Titre de la section -->
+      <h2 class="section-title mb-3">À propos de moi</h2>
+      
       <p>
         Bonjour ! Je suis <strong>Emre Guclu</strong>, développeur fullstack et informaticien polyvalent, passionné par le code et le hardware.  
         Sur ce portfolio, vous découvrirez mes compétences, mon parcours professionnel et mes projets réalisés.  
@@ -199,7 +215,10 @@
 </section>
 
 
+
+
 <!-- PROJECTS -->
+
 <section id="projects" class="container py-5">
     <h2 class="section-title">Projets</h2>
     <div class="row g-4">
@@ -208,181 +227,55 @@
         
         <div class="col-md-4">
             <div class="project-card text-center">
-                <h4>Projet Docker</h4>
-                <a href="projet-docker.html">
-                    <img src="images/image1.png" class="img-fluid rounded mb-3" alt="Docker">
+                <h4>Jeu JavaFX</h4>
+                <a href="java.html">
+                    <img src="images/Projet-javaFX-acceuil.png" class="img-fluid rounded mb-3" alt="Docker">
                 </a>
-                <p>Dockerisation complète d'applications + orchestrations.</p>
+                <p></p>
                 <div class="d-flex justify-content-center gap-2 mt-2">
                     <a href="https://github.com/ton-projet" target="_blank" class="btn btn-neon px-4 py-2">GitHub</a>
                 </div>
             </div>
         </div>
 
-
-        <!-- Jeu Java 
         <div class="col-md-4">
-            <div class="project-card">
-                <h4>Jeu Java</h4>
-                <div id="javaCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="Java 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="Java 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="Java 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#javaCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#javaCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            <div class="project-card text-center">
+                <h4>Alternance - dev full stack</h4>
+                <a href="alternance.html">
+                    <img src="gif/cyberpunk.gif" class="img-fluid rounded mb-3" alt="Docker">
+                </a>
+                <p></p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="https://github.com/ton-projet" target="_blank" class="btn btn-neon px-4 py-2">GitHub</a>
                 </div>
-                <p>Développement d'un jeu en Java avec logique serveur/clients.</p>
             </div>
         </div>
 
-        <!-- Projet Fullstack - Alternance 
         <div class="col-md-4">
-            <div class="project-card">
-                <h4>Projet Fullstack - Alternance</h4>
-                <div id="fullstackCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="Fullstack 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="Fullstack 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="Fullstack 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#fullstackCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#fullstackCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            <div class="project-card text-center">
+                <h4>Freelance Site vitrine</h4>
+                <a href="stage.html">
+                    <img src="images/freelance.webp" class="img-fluid rounded mb-3" alt="Docker">
+                </a>
+                <p></p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="https://github.com/ton-projet" target="_blank" class="btn btn-neon px-4 py-2">GitHub</a>
                 </div>
-                <p>Application complète (front/back) développée en entreprise.</p>
             </div>
         </div>
 
-        <!-- Stage-Visor 
         <div class="col-md-4">
-            <div class="project-card">
-                <h4>Stage-Visor (École)</h4>
-                <div id="visorCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="Visor 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="Visor 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="Visor 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#visorCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#visorCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            <div class="project-card text-center">
+                <h4>Projet Docker Full stack</h4>
+                <a href="docker.html">
+                    <img src="gif/fond.gif" class="img-fluid rounded mb-3" alt="Docker">
+                </a>
+                <p></p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="https://github.com/ton-projet" target="_blank" class="btn btn-neon px-4 py-2">GitHub</a>
                 </div>
-                <p>Projet fullstack d'école : React + Spring Boot.</p>
             </div>
         </div>
-
-        <!-- Projet UX/UI 
-        <div class="col-md-4">
-            <div class="project-card">
-                <h4>Projet UX/UI (Client)</h4>
-                <div id="uxCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="UX 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="UX 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="UX 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#uxCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#uxCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-                <p>Design d'un prototype UX pour un client universitaire.</p>
-            </div>
-        </div>
-
-        <!-- Projet PHP 
-        <div class="col-md-4">
-            <div class="project-card">
-                <h4>Projet PHP</h4>
-                <div id="phpCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="PHP 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="PHP 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="PHP 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#phpCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#phpCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-                <p>Développement d'une application PHP complète.</p>
-            </div>
-        </div>
-
-        <!-- Stage en entreprise 
-        <div class="col-md-4">
-            <div class="project-card">
-                <h4>Stage en entreprise</h4>
-                <div id="stageCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/image1.png" class="d-block w-100 rounded" alt="Stage 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image2.png" class="d-block w-100 rounded" alt="Stage 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/image3.png" class="d-block w-100 rounded" alt="Stage 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#stageCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#stageCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-                <p>Automatisation, support, Windows Server & AD.</p>
-            </div>
-        </div>
-        -->
-
 
     </div>
 </section>

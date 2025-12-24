@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet universitaire – Jeu Tower Defense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1b1b24;
+      color: #eaeaf0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1b1b24, #15151d);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: #b5b5c5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section .text {
+      flex: 1;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    .section p,
+    .section li {
+      color: #cfcfe0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    .project-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    .back-link:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Projet universitaire – Jeu Tower Defense</h1>
+    <p>JavaFX · Programmation orientée objet · Algorithmes</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="text">
+        <h2>Présentation du projet</h2>
+        <p>
+          Dans le cadre de mon projet universitaire, j’ai développé un jeu de type
+          <strong>Tower Defense</strong> en <strong>JavaFX</strong>.
+          L’objectif était de concevoir une expérience interactive où le joueur doit
+          placer des tours afin de défendre sa base contre des vagues d’ennemis.
+        </p>
+        <p>
+          Le projet mettait l’accent sur la logique de jeu, la gestion des interactions
+          et la conception d’une interface graphique fluide et intuitive.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section reverse">
+      <img src="images/Projet-javaFX-acceuil.png" alt="Gameplay Tower Defense">
+
+      <div class="text">
+        <h2>Fonctionnalités & mécaniques</h2>
+        <ul>
+          <li>Placement stratégique de tours défensives</li>
+          <li>Gestion de vagues d’ennemis</li>
+          <li>Système de points et de progression</li>
+          <li>Interactions utilisateur en temps réel</li>
+          <li>Interface graphique développée avec JavaFX</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <img src="images/Projet-javaFX-jeu.png" alt="Algorithme BFS">
+
+      <div class="text">
+        <h2>Algorithmes & logique</h2>
+        <p>
+          Le projet intègre un algorithme de <strong>Breadth-First Search (BFS)</strong>,
+          permettant aux ennemis de calculer le chemin le plus optimal pour atteindre
+          leur objectif.
+        </p>
+        <p>
+          Cette approche garantit une intelligence artificielle dynamique et réaliste,
+          rendant chaque partie différente selon les choix stratégiques du joueur.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section reverse">
+      <img src="images/JavaFX_Logo.png" alt="Interface JavaFX">
+
+      <div class="text">
+        <h2>Compétences développées</h2>
+        <p>
+          Ce projet m’a permis de consolider mes compétences en
+          <strong>programmation orientée objet</strong>,
+          en <strong>algorithmes de recherche</strong>
+          et en <strong>développement d’interfaces graphiques interactives</strong>.
+        </p>
+        <p>
+          Il m’a également appris à appliquer des concepts théoriques de manière
+          concrète et ludique à travers un projet complet.
+        </p>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+  </main>
+
+</body>
+</html>
